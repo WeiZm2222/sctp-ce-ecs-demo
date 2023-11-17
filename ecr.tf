@@ -4,10 +4,10 @@
 # You can then replace task definition > image to point to your 
 # created image
 
-#resource "aws_ecr_repository" "my_repository" {
-#    name = "zmw-ecr-repo311"
-#    image_tag_mutability = "MUTABLE"
-#    image_scanning_configuration {
-#      scan_on_push = true
-#    }
-#}
+resource "aws_ecr_repository" "my_repository" {
+    name = "zmw-ecr-repo311"
+    image_tag_mutability = "MUTABLE"
+    image_scanning_configuration {
+      scan_on_push = true
+    }
+}
