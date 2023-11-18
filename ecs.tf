@@ -10,13 +10,33 @@ resource "aws_ecs_task_definition" "own_task_definition" {
   cpu                   =   256
   memory                = 512
 
-  container_definitions = templatefile("./files/task-definition.json", {
-    image_url        = "nginx:latest"
-    container_name   = "NGINX"
-    log_group_region = "us-east-1"
-    log_group_name   = "/ecs/zmw-taskdef-tf" # Update accordingly
-    log_group_prefix = "ecs"
-  })
+  #container_definitions = templatefile("./files/task-definition.json", {
+  #  image_url        = "nginx:latest"
+  #  container_name   = "NGINX"
+  #  log_group_region = "us-east-1"
+  #  log_group_name   = "/ecs/zmw-taskdef-tf" # Update accordingly
+  #  log_group_prefix = "ecs"
+ # })
+
+ container_definitions = <<EOF
+[
+  {
+    "name": "311-container",
+    "image": "255945442255.dkr.ecr.us-east-1.amazonaws.com/zmw-ecr-repo311:v1"
+    "memory": 512,
+    "cpu": 256,
+    "essential": true,
+    "entryPoint": ["/"]
+    "portMappings": [
+      {
+        "containerPort": 80,
+        "hostPort": 80
+      }
+    ]
+  }
+]
+
+EOF
 }
 
 # Creates an ecs cluster

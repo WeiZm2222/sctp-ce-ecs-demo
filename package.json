@@ -1,0 +1,11 @@
+{
+  "name": "sctp-ce-ecs-demo",
+  "version": "1.0.0",
+  "description": "![image](https://github.com/luqmannnn/ecs-fargate/assets/9068525/dd4608c3-5f42-48f0-9d69-73c73d872d4a)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "WZM",
+  "license": "ISC"
+}
