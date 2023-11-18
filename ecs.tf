@@ -21,8 +21,8 @@ resource "aws_ecs_task_definition" "own_task_definition" {
  container_definitions = <<EOF
 [
   {
-    "name": "311-container",
-    "image": "255945442255.dkr.ecr.us-east-1.amazonaws.com/zmw-ecr-repo311:v1",
+    "name": "311-container", 
+    "image": "255945442255.dkr.ecr.us-east-1.amazonaws.com/zmw-ecr-repo311:v2",
     "memory": 512,
     "cpu": 256,
     "essential": true,
@@ -35,7 +35,6 @@ resource "aws_ecs_task_definition" "own_task_definition" {
     ]
   }
 ]
-
 EOF
 }
 

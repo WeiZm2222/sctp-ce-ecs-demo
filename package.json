@@ -1,11 +1,22 @@
 {
-  "name": "sctp-ce-ecs-demo",
+  "name": "3-4-activitya",
   "version": "1.0.0",
-  "description": "![image](https://github.com/luqmannnn/ecs-fargate/assets/9068525/dd4608c3-5f42-48f0-9d69-73c73d872d4a)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "WZM",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/WeiZm2222/3-4-Activitya.git"
+  },
+  "author": "WeiZm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WeiZm2222/3-4-Activitya/issues"
+  },
+  "homepage": "https://github.com/WeiZm2222/3-4-Activitya#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
