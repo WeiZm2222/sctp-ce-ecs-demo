@@ -22,11 +22,11 @@ resource "aws_ecs_task_definition" "own_task_definition" {
 [
   {
     "name": "311-container",
-    "image": "255945442255.dkr.ecr.us-east-1.amazonaws.com/zmw-ecr-repo311:v1"
+    "image": "255945442255.dkr.ecr.us-east-1.amazonaws.com/zmw-ecr-repo311:v1",
     "memory": 512,
     "cpu": 256,
     "essential": true,
-    "entryPoint": ["/"]
+    "entryPoint": ["/"],
     "portMappings": [
       {
         "containerPort": 80,
