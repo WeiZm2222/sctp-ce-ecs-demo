@@ -1,4 +1,12 @@
+# Assignment 3.11 
+
+- ecr.tf: Created private repo "zmw-ecr-repo311"
+- Added Dockerfile to create a Docker image
+- Push the image to private registry
+- ecs.tf: Replaced task definition to point to newly created image
+
 # ECS Fargate simple creation
+
 
 
 ### What is ECS? 
