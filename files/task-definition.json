@@ -7,7 +7,6 @@
       "name": "${container_name}",
       "portMappings": [
         {
-            //"name": "nginx80-tcp",
             "name": "${port_name}",
             "containerPort": 8080,
             "hostPort": 8080,
